@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'RoboMono';
-    src: url('./fontes/RobotoMono-Thin.ttf');
+    src: url('./fonts/RobotoMono-Thin.ttf');
   }
   
 * {
@@ -110,32 +110,32 @@ header {
 } 
 
 #linkedin {
-    background: url("icones/icons8-linkedin-96.png") no-repeat;
+    background: url("icons/icons8-linkedin-96.png") no-repeat;
     background-size: contain;
 }
 
 #github {
-    background: url("icones/icons8-github-96.png") no-repeat;
+    background: url("icons/icons8-github-96.png") no-repeat;
     background-size: contain;
 }
 
 #facebook {
-    background: url("icones/icons8-facebook-96.png") no-repeat;
+    background: url("icons/icons8-facebook-96.png") no-repeat;
     background-size: contain;
 }
 
 #e-mail {
-    background: url("icones/icons8-mensagem-preenchida-96.png") no-repeat;
+    background: url("icons/icons8-mensagem-preenchida-96.png") no-repeat;
     background-size: contain;
 }
 
 #instagram {
-    background: url("icones/icons8-instagram-96.png") no-repeat;
+    background: url("icons/icons8-instagram-96.png") no-repeat;
     background-size: contain;
 }
 
 #whatsapp {
-    background: url("icones/icons8-whatsapp-96.png") no-repeat;
+    background: url("icons/icons8-whatsapp-96.png") no-repeat;
     background-size: contain;
 }
 
