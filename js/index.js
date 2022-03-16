@@ -32,7 +32,7 @@ botaoMenuCabecalho.click(() => {
         }, function () {
             $(this).css("background-color", "#291e38");
         })
-        contatos.css('transform', 'translateY(360px)')
+        contatos.css('transform', 'translateY(480px)')
         // contatos.css('margin-left', '30px')
         contatos.css('transition', '1s')
         contatos.toggleClass('selecionado')

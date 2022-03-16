@@ -372,46 +372,61 @@ footer span {
 }
 
 @media (max-width: 980px) {
-    * {
-        overflow-x: hidden;
-    }
     .nome { margin-right: 30px; }
     .pesquisa { display: none; }
     .botaoMenu {
         display: flex;
         margin-left: 30px;
     }
+
     .contatos {
         display: none;
         margin-left: 30px;
     }
+
     .contatos a {
         width: 100%;
         border-bottom: solid 1px #fff;
         color: #fff;
         text-decoration: none;
     }
+
     #conteudo {
         height: 100px;
     }
+
     #cabecalho a {
         background: none;
         width: 100%;
+        margin-top: 20px;
+        padding-left: 20px;
     }
+
     .contatos {
-        margin-top: -360px;
+        margin-top: -480px;
         background: #291e38;
-        width: 180px;
+        width: 80%;
         position: absolute;
         display: flex;
         flex-direction: column;
     }
+
+    #apresentacao {
+        overflow: scroll;
+    }
+
     #pt2 {
         flex-direction: column;
         overflow: scroll;
+        display: block;
+        padding-bottom: 20px;
+        /* padding-left: 30px; */
     }
+
     .slide {
         margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .see-more {
@@ -420,6 +435,12 @@ footer span {
 
     #contatosFooter {
         display: none;
+    }
+
+    footer span {
+    position: relative;
+    padding-left: auto;
+    padding-right: auto;
     }
 }
 
