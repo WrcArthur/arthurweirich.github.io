@@ -405,12 +405,18 @@ footer span {
     }
     #pt2 {
         flex-direction: column;
-        /* overflow: hidden; */
+        overflow: scroll;
     }
     .slide {
         margin-top: 40px;
-        background-size: cover;
-        background-attachment: fixed;
+    }
+
+    .see-more {
+        margin-bottom: 10px;
+    }
+
+    #contatosFooter {
+        display: none;
     }
 }
 
