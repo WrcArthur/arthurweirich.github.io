@@ -372,6 +372,9 @@ footer span {
 }
 
 @media (max-width: 980px) {
+    * {
+        overflow-x: hidden;
+    }
     .nome { margin-right: 30px; }
     .pesquisa { display: none; }
     .botaoMenu {
