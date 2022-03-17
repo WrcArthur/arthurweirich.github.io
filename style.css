@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'RoboMono';
     src: url('./fonts/RobotoMono-Thin.ttf');
-  }
-  
+}
+
 * {
-    font-family: 'RoboMono';
     margin: 0;
     padding: 0;
+    font-family: 'RoboMono';
 }
 
 header {
@@ -15,69 +15,69 @@ header {
 }
 
 .botaoMenu {
-    height: 60px;
     display: none;
     align-items: center;
     justify-content: center;
+    height: 60px;
 }
 
 #checkboxMenu {
-    width: 50px;
     position: absolute;
+    width: 50px;
     opacity: 0;
 }
 
-#checkboxMenu ~ label {
-    margin-left: 10px;
-    cursor: pointer;
-    position: relative;
+#checkboxMenu~label {
     display: block;
+    position: relative;
+    margin-left: 10px;
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
-#checkboxMenu ~ label span {
-    position: absolute;
+#checkboxMenu~label span {
     display: block;
-    height: 5px;
+    position: absolute;
     width: 100%;
+    height: 5px;
     border-radius: 30px;
     background: skyblue;
     transition: 0.25s ease-in-out;
 }
 
-#checkboxMenu ~ label span:nth-child(1) {
+#checkboxMenu~label span:nth-child(1) {
     top: 0;
 }
 
-#checkboxMenu ~ label span:nth-child(2) {
+#checkboxMenu~label span:nth-child(2) {
     top: 12px;
 }
 
-#checkboxMenu ~ label span:nth-child(3) {
+#checkboxMenu~label span:nth-child(3) {
     top: 24px;
 }
 
-#checkboxMenu:checked + label span:nth-child(1) {
+#checkboxMenu:checked+label span:nth-child(1) {
     transform: rotate(-45deg);
     top: 12px;
 }
 
-#checkboxMenu:checked + label span:nth-child(2) {
+#checkboxMenu:checked+label span:nth-child(2) {
     opacity: 0;
 }
 
-#checkboxMenu:checked + label span:nth-child(3) {
+#checkboxMenu:checked+label span:nth-child(3) {
     transform: rotate(45deg);
     top: 12px;
 }
 
 #conteudo {
-    height: 60px;
-    background-color: #291e38;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 60px;
+    background-color: #291e38;
 }
 
 
@@ -89,16 +89,16 @@ header {
 }
 
 .nome {
-    font-size: 25px;
     font-style: inherit;
+    font-size: 25px;
     color: #fff;
 }
 
 #cabecalho input {
+    padding-left: 10px;
+    margin-right: 40px;
     width: 200px;
     height: 30px;
-    margin-right: 40px;
-    padding-left: 10px;
     background-color: #503e69;
     border-radius: 8px;
     border: 1px solid gray;
@@ -107,7 +107,7 @@ header {
 #cabecalho input:focus {
     border: none;
     outline: 0;
-} 
+}
 
 #linkedin {
     background: url("icons/icons8-linkedin-96.png") no-repeat;
@@ -140,33 +140,33 @@ header {
 }
 
 #pt1 {
-    background: url("images/background.png") no-repeat; /* https://miro.medium.com/max/3840/1*ee9Ji2ToUxeYfj3YUQ1xsA.jpeg */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    background: url("images/background.png") no-repeat;
 }
 
 #apresentacao {
+    margin-right: 20px;
     width: 500px;
     height: 350px;
-    background-color: #0a0a0ad9;
     padding: 10px;
     border-radius: 15px;
-    margin-right: 20px;
+    background-color: #0a0a0ad9;
 }
 
 #apresentacao h1 {
-    color: skyblue;
     font-size: 45px;
+    color: skyblue;
 }
 
 #apresentacao p {
-    color: #fff;
     font-size: 1.4em;
+    color: #fff;
 }
 
 #faixa {
@@ -176,100 +176,41 @@ header {
     text-align: center;
 }
 
-/* .projects-title {
-    color: white;
-    font-size: 6em;
-    position: relative;
-} */
-
 #pt2 {
-    background: url("images/background2.png") no-repeat; /*https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80 */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    background: url("images/background2.png") no-repeat;
+    /*https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80 */
 }
 
-/* #projetos {
-    display: flex;
-    flex-direction: row;
-    margin-left: -335px;
-    font-size: 35px;
-    color: #fff
-}
-
-#projetos nav {
-    width: 300px;
-    height: 420px;
-    background-color: rgba(10, 10, 10, 0.85);
-    padding: 10px;
-    border-radius: 15px;
-}
-
-#projetos h2 {
-    font-size: 40px;
-    text-align: center;
-}
-
-#projetos ul {
-    margin-top: 10px;
-    list-style: none;
-    text-align: center;
-}
-
-#projetos li {
-    border-bottom: solid 1px black;
-    height: 50px;
-}
-
-#projetos li a{
-    text-decoration: none;
-    color: #fff;
-}
-
-#projetos li:hover {
-    background-color: rgb(58, 56, 56, 0.8);
-    cursor: pointer;
-}
-
-#btnLateral {
-    background: none;
-    border: none;
-    margin-left: 20px;
-    cursor: pointer;
-    font-size: 80px;
-    color:skyblue;
-}
-
-#btnLateral:hover {
-    color: rgb(192, 211, 226);
-} */
 
 .slide {
-    background-color: #0a0a0ad9;
+    display: flex;
+    flex-direction: column;
     width: 320px;
     height: 440px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+    background-color: #0a0a0ad9;
 }
 
 .image {
     margin: 20px 20px 10px 20px;
+    width: 280px;
+    height: 160px;
     border-radius: 5px;
-    width:280px;
-    height:160px;
 }
 
 .description {
-    width: 284px;
-    height: 148px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    width: 284px;
+    height: 148px;
     color: #fff;
 }
 
@@ -293,14 +234,14 @@ header {
 }
 
 .see-more {
+    align-self: center;
     width: 100px;
     height: 30px;
-    background-color: #5BBAFF;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    align-self: center;
     margin-top: 57px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5BBAFF;
+    color: #fff;
 }
 
 .see-more:hover {
@@ -308,15 +249,13 @@ header {
     box-shadow: 0 0 8px white;
 }
 
-/* ate aqui */
-
 footer {
-    border-top: solid 8px skyblue;
-    height: 240px;
-    background-color: #1b1420;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 240px;
+    border-top: solid 8px skyblue;
+    background-color: #1b1420;
 }
 
 #conteudoFooter {
@@ -363,17 +302,23 @@ footer {
 }
 
 footer span {
-    width: 230px;
-    font-size: 12px;
     position: relative;
+    width: 230px;
     left: 50%;
     right: 50%;
+    font-size: 12px;
     color: #fff;
 }
 
 @media (max-width: 980px) {
-    .nome { margin-right: 30px; }
-    .pesquisa { display: none; }
+    .nome {
+        margin-right: 30px;
+    }
+
+    .pesquisa {
+        display: none;
+    }
+
     .botaoMenu {
         display: flex;
         margin-left: 30px;
@@ -386,9 +331,9 @@ footer span {
 
     .contatos a {
         width: 100%;
-        border-bottom: solid 1px #fff;
         color: #fff;
         text-decoration: none;
+        border-bottom: solid 1px #fff;
     }
 
     #conteudo {
@@ -396,31 +341,31 @@ footer span {
     }
 
     #cabecalho a {
-        background: none;
         width: 100%;
         margin-top: 20px;
         padding-left: 20px;
+        background: none;
     }
 
     .contatos {
-        margin-top: -480px;
-        background: #291e38;
-        width: 80%;
-        position: absolute;
         display: flex;
         flex-direction: column;
+        position: absolute;
+        margin-top: -480px;
+        width: 80%;
+        background: #291e38;
     }
 
     #apresentacao {
+        margin-left: 5%;
         overflow: scroll;
     }
 
     #pt2 {
+        display: block;
         flex-direction: column;
         overflow: scroll;
-        display: block;
         padding-bottom: 20px;
-        /* padding-left: 30px; */
     }
 
     .slide {
@@ -438,15 +383,25 @@ footer span {
     }
 
     footer span {
-    position: relative;
-    padding-left: auto;
-    padding-right: auto;
+        position: relative;
+        margin-left: -30%;
     }
 }
 
-@media (min-width: 981px)  and (max-width: 1100px) {
-    .nome { margin-right: 20px; }
-    .pesquisa { display: none; }
-    .botaoMenu { display: none; }
-    .contatos { display: flex; }
+@media (min-width: 981px) and (max-width: 1100px) {
+    .nome {
+        margin-right: 20px;
+    }
+
+    .pesquisa {
+        display: none;
+    }
+
+    .botaoMenu {
+        display: none;
+    }
+
+    .contatos {
+        display: flex;
+    }
 }

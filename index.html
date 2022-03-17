@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arthur Weirich</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="icones/icon.png" >
+    <link rel="shortcut icon" href="icones/icon.png">
 </head>
+
 <body>
     <header id="cabecalho">
+        <!-- Cabeçalho com Contatos -->
         <nav id="conteudo">
             <div class="botaoMenu">
+                <!-- Botão para menu estilo "Hambúrger" em dispositivos móveis -->
                 <input type="checkbox" id="checkboxMenu">
                 <label for="checkboxMenu">
                     <span></span>
@@ -19,109 +23,117 @@
                 </label>
             </div>
             <div class="contatos">
-                <a href="https://www.linkedin.com/in/arthur-weirich-ab6418154/" id="linkedin" target="_blank" title="Linkedin"></a>
+                <!-- Contatos em si -->
+                <a href="https://www.linkedin.com/in/arthur-weirich-ab6418154/" id="linkedin" target="_blank"
+                    title="Linkedin"></a>
                 <a href="https://github.com/WrcArthur" id="github" target="_blank" title="Github"></a>
                 <a href="mailto:arthur_weirich@hotmail.com" id="e-mail" title="E-mail"></a>
                 <a href="https://www.facebook.com/arthur.weirich.3/" id="facebook" target="_blank" title="Facebook"></a>
                 <a href="https://www.instagram.com/wrc_arthur/" id="instagram" target="_blank" title="Instagram"></a>
-                <a href="https://api.whatsapp.com/send?phone=5553984788382" id="whatsapp" target="_blank" title="Whatsapp"></a>
+                <a href="https://api.whatsapp.com/send?phone=5553984788382" id="whatsapp" target="_blank"
+                    title="Whatsapp"></a>
             </div>
             <div class="nome">ARTHUR WEIRICH</div>
             <div class="pesquisa">
+                <!-- Futura barra de pesquisa-->
                 <input type="text" id="pesquisa" class="pesquisa" placeholder="Pesquisar palavra chave">
             </div>
         </nav>
     </header>
+
     <main>
         <div id="pt1">
+            <!-- Apresentação -->
             <aside id="apresentacao">
                 <h1>Olá, </h1>
                 <p id="bio">
-                    meu nome é Arthur Weirich, tenho 20 anos, sou de Pelotas - RS. Graduando em Engenharia de Computação pela UFPel.
-                    Entuasiasta em front end, decidi criar este "portfolio" como primeiro projeto para ir pondo em prática meus conhecimentos.
-                    Estudo diaramente algumas tecnologias, como: HTML, CSS, JS; e conhecimento breve sobre React e jQuery.
+                    meu nome é Arthur Weirich, tenho 20 anos, sou de Pelotas - RS. Graduando em Engenharia de Computação
+                    pela UFPel.
+                    Entuasiasta em front end, decidi criar este "portfolio" como primeiro projeto para ir pondo em
+                    prática meus conhecimentos.
+                    Estudo diaramente algumas tecnologias, como: HTML, CSS, JS; e conhecimento breve sobre React e
+                    jQuery.
                 </p>
             </aside>
         </div>
-        <div id="faixa">
-            <!-- <strong class="projects-title">Projetos</strong> -->
-        </div>
+
+        <div id="faixa"></div> <!-- Faixa que divide as duas partes do contúdo da página -->
+
         <div id="pt2">
-            <!-- ANTIGA BARRA LATERAL <aside id="projetos">
-                <nav>
-                    <h2>PROJETOS</h2>
-                    <ul id="listaProjetos">
-                        <li><a href="projects/flappy/flappy.html" target="_blank" title="Flappy Bird">Flappy Bird</a></li>
-                        <li><a href="" title="--x--x--">--x--x--</a></li>
-                        <li><a href="" title="--x--x--">--x--x--</a></li>
-                        <li><a href="" title="--x--x--">--x--x--</a></li>
-                        <li><a href="" title="--x--x--">--x--x--</a></li>
-                        <li><a href="" title="--x--x--">--x--x--</a></li>
-                        <li><a href="" title="--x--x--">--x--x--</a></li>
-                    </ul>
-                </nav>
-                <button id="btnLateral">❯</button>
-            </aside> -->
+            <!-- Segunda parte da pagina. Contém slides com projetos -->
             <div class="slide">
-                <img class="image" src="./images/flappy-bird.jpg" alt="Imagem sobre o jogo Flappy Bird"/>
+                <img class="image" src="./images/flappy-bird.jpg" alt="Imagem sobre o jogo Flappy Bird" />
                 <div class="description">
+                    <!--- Descrição e título do projeto -->
                     <strong class="title">Flappy Bird</strong>
-                    <p class="text-description">Primeiro joguinho que fiz durante meus estudos de JavaScript. Utilizei JS puro e o visual foi feito com HTML e CSS, que são tecnologias que também estou estudando.</p>
+                    <p class="text-description">Primeiro joguinho que fiz durante meus estudos de JavaScript. Utilizei
+                        JS puro e o visual foi feito com HTML e CSS, que são tecnologias que também estou estudando.</p>
                 </div>
                 <div class="footer">
-                    <a target="_blank" href="projects/flappy/flappy.html" >
+                    <!-- Botão "Veja Mais" -->
+                    <a target="_blank" href="projects/flappy/flappy.html">
                         <button class="see-more" title="See More">Veja Mais</button>
                     </a>
                 </div>
             </div>
             <div class="slide">
-                <img class="image" src="./images/em-breve.jpg" alt="Em breve"/>
+                <img class="image" src="./images/em-breve.jpg" alt="Em breve" />
                 <div class="description">
+                    <!--- Descrição e título do projeto -->
                     <strong class="title">Em breve</strong>
-                    <!-- <p class="text-description">Em breve</p> -->
                 </div>
                 <div class="footer">
-                    <a target="_blank" href="#" >
+                    <!-- Botão "Veja Mais" -->
+                    <a target="_blank" href="#">
                         <button class="see-more" title="See More">Veja Mais</button>
                     </a>
                 </div>
             </div>
             <div class="slide">
-                <img class="image" src="./images/em-breve.jpg" alt="Em breve"/>
+                <img class="image" src="./images/em-breve.jpg" alt="Em breve" />
                 <div class="description">
+                    <!--- Descrição e título do projeto -->
                     <strong class="title">Em breve</strong>
-                    <!-- <p class="text-description">Em breve</p> -->
                 </div>
                 <div class="footer">
-                    <a target="_blank" href="#" >
+                    <!-- Botão "Veja Mais" -->
+                    <a target="_blank" href="#">
                         <button class="see-more" title="See More">Veja Mais</button>
                     </a>
                 </div>
             </div>
         </div>
     </main>
+
     <footer>
         <nav id="conteudoFooter">
+            <!-- Rodapé -->
             <ul id="explore">
+                <!-- Navegação pela página -->
                 <h2><strong>E</strong>xplore</h2>
                 <li><a href="#pt1" title="Contatos">Contatos</a></li>
                 <li><a href="#pt1" title="Quem">Quem sou</a></li>
                 <li><a href="#pt2" title="Projetos">Projetos</a></li>
             </ul>
             <ul id="redesSociais">
+                <!-- Redes Sociais -->
                 <h2> <strong>R</strong>edes <strong>S</strong>ociais</h2>
                 <li><a href="https://www.instagram.com/wrc_arthur/" target="_blank" title="Instagram">Instagram</a></li>
-                <li><a href="https://www.facebook.com/arthur.weirich.3/" target="_blank" title="Facebook">Facebook</a></li>
-                <li><a href="https://www.linkedin.com/in/arthur-weirich-ab6418154/"target="_blank" title="Linkedin">Linkedin</a></li>
+                <li><a href="https://www.facebook.com/arthur.weirich.3/" target="_blank" title="Facebook">Facebook</a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/arthur-weirich-ab6418154/" target="_blank"
+                        title="Linkedin">Linkedin</a></li>
             </ul>
             <div id="contatosFooter">
+                <!-- Contatos -->
                 <span id="numero">✆ (53)98478-8382</span>
                 <span id="email">✉ arthur_weirich@hotmail.com</span>
             </div>
         </nav>
         <span>Copyright © 2021 Arthur Weirich</span>
     </footer>
-        <script src="js/jquery.js"></script>
-        <script src="js/index.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
